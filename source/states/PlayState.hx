@@ -387,6 +387,9 @@ class PlayState extends MusicBeatState
 			case 'school': new states.stages.School(); //Week 6 - Senpai, Roses
 			case 'schoolEvil': new states.stages.SchoolEvil(); //Week 6 - Thorns
 			case 'tank': new states.stages.Tank(); //Week 7 - Ugh, Guns, Stress
+			case 'head-trip': new states.stages.HeadTrip(); // backrooms
+			case 'lucrid': new states.stages.Lucrid(); // backrooms
+			case 'phantasmagoria': new states.stages.Phantasmagoria(); // backrooms
 		}
 
 		if(isPixelStage) {
@@ -2116,6 +2119,9 @@ class PlayState extends MusicBeatState
 			case 'Play Sound':
 				if(flValue2 == null) flValue2 = 1;
 				FlxG.sound.play(Paths.sound(value1), flValue2);
+			case 'Camera Switch':
+				FlxTween.tween(camHUD, {alpha: value2 == "on" ? 1 : 0}, Std.parseInt(value1));
+				FlxTween.tween(camGame, {alpha: value2 == "on" ? 1 : 0}, Std.parseInt(value1));
 		}
 		
 		stagesFunc(function(stage:BaseStage) stage.eventCalled(eventName, value1, value2, flValue1, flValue2, strumTime));

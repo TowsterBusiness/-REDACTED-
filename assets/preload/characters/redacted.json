@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Redacted Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				58,
+				-9
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Redacted Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				8
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Redacted Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				34,
+				0
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Redacted Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				26,
+				-5
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Redacted Down",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Redacted",
+	"position": [
+		-240,
+		-320
+	],
+	"healthicon": "redacted",
+	"flip_x": false,
+	"healthbar_colors": [
+		176,
+		141,
+		187
+	],
+	"camera_position": [
+		130,
+		260
+	],
+	"sing_duration": 4,
+	"scale": 0.6
+}
